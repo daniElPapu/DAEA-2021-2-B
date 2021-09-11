@@ -231,7 +231,7 @@ namespace Lab02_01
             this.dataGridView1.Size = new System.Drawing.Size(540, 137);
             this.dataGridView1.TabIndex = 5;
             // 
-            // manProductos
+            // manProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,8 +242,8 @@ namespace Lab02_01
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Name = "manProductos";
-            this.Text = "manProductos";
+            this.Name = "manProveedores";
+            this.Text = "mantenimiento de Proveedores";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

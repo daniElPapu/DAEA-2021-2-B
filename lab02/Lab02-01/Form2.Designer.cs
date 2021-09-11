@@ -79,33 +79,37 @@ namespace Lab02_01
             // mnuManUsuarios
             // 
             this.mnuManUsuarios.Name = "mnuManUsuarios";
-            this.mnuManUsuarios.Size = new System.Drawing.Size(139, 22);
+            this.mnuManUsuarios.Size = new System.Drawing.Size(180, 22);
             this.mnuManUsuarios.Text = "Usuarios";
             this.mnuManUsuarios.Click += new System.EventHandler(this.mnuManUsuarios_Click);
             // 
             // mnuManProductos
             // 
             this.mnuManProductos.Name = "mnuManProductos";
-            this.mnuManProductos.Size = new System.Drawing.Size(139, 22);
+            this.mnuManProductos.Size = new System.Drawing.Size(180, 22);
             this.mnuManProductos.Text = "Productos";
+            this.mnuManProductos.Click += new System.EventHandler(this.mnuManProductos_Click);
             // 
             // mnuManCategorias
             // 
             this.mnuManCategorias.Name = "mnuManCategorias";
-            this.mnuManCategorias.Size = new System.Drawing.Size(139, 22);
+            this.mnuManCategorias.Size = new System.Drawing.Size(180, 22);
             this.mnuManCategorias.Text = "Categorias";
+            this.mnuManCategorias.Click += new System.EventHandler(this.mnuManCategorias_Click);
             // 
             // mnuManProveedores
             // 
             this.mnuManProveedores.Name = "mnuManProveedores";
-            this.mnuManProveedores.Size = new System.Drawing.Size(139, 22);
+            this.mnuManProveedores.Size = new System.Drawing.Size(180, 22);
             this.mnuManProveedores.Text = "Proveedores";
+            this.mnuManProveedores.Click += new System.EventHandler(this.mnuManProveedores_Click);
             // 
             // mnuManClientes
             // 
             this.mnuManClientes.Name = "mnuManClientes";
-            this.mnuManClientes.Size = new System.Drawing.Size(139, 22);
+            this.mnuManClientes.Size = new System.Drawing.Size(180, 22);
             this.mnuManClientes.Text = "Clientes";
+            this.mnuManClientes.Click += new System.EventHandler(this.mnuManClientes_Click);
             // 
             // procesosToolStripMenuItem
             // 
