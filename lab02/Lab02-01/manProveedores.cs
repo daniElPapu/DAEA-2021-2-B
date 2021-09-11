@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Lab02_01
 {
-    public partial class ManProductos : Form
+    public partial class manProveedores : Form
     {
-        public ManProductos()
+        public manProveedores()
         {
             InitializeComponent();
         }

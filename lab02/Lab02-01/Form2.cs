@@ -19,7 +19,7 @@ namespace Lab02_01
 
         private void mnuManUsuarios_Click(object sender, EventArgs e)
         {
-            manUsuario frm = new manUsuario();
+            ManProductos frm = new manUsuario();
             frm.MdiParent = this;
             frm.Show();
         }
@@ -28,5 +28,6 @@ namespace Lab02_01
         {
             Application.Exit();
         }
+
     }
 }
