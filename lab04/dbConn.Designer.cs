@@ -42,6 +42,7 @@ namespace lab04
             this.btnEstado = new System.Windows.Forms.Button();
             this.btnDesconectar = new System.Windows.Forms.Button();
             this.btnPersona = new System.Windows.Forms.Button();
+            this.btnCurso = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -129,7 +130,7 @@ namespace lab04
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(60, 261);
+            this.btnConectar.Location = new System.Drawing.Point(40, 261);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(75, 23);
             this.btnConectar.TabIndex = 9;
@@ -139,7 +140,7 @@ namespace lab04
             // 
             // btnEstado
             // 
-            this.btnEstado.Location = new System.Drawing.Point(158, 261);
+            this.btnEstado.Location = new System.Drawing.Point(121, 261);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(75, 23);
             this.btnEstado.TabIndex = 10;
@@ -150,7 +151,7 @@ namespace lab04
             // btnDesconectar
             // 
             this.btnDesconectar.Enabled = false;
-            this.btnDesconectar.Location = new System.Drawing.Point(250, 261);
+            this.btnDesconectar.Location = new System.Drawing.Point(202, 261);
             this.btnDesconectar.Name = "btnDesconectar";
             this.btnDesconectar.Size = new System.Drawing.Size(75, 23);
             this.btnDesconectar.TabIndex = 11;
@@ -161,7 +162,7 @@ namespace lab04
             // btnPersona
             // 
             this.btnPersona.Enabled = false;
-            this.btnPersona.Location = new System.Drawing.Point(345, 261);
+            this.btnPersona.Location = new System.Drawing.Point(283, 261);
             this.btnPersona.Name = "btnPersona";
             this.btnPersona.Size = new System.Drawing.Size(75, 23);
             this.btnPersona.TabIndex = 12;
@@ -169,11 +170,22 @@ namespace lab04
             this.btnPersona.UseVisualStyleBackColor = true;
             this.btnPersona.Click += new System.EventHandler(this.btnPersona_Click);
             // 
+            // btnCurso
+            // 
+            this.btnCurso.Location = new System.Drawing.Point(365, 261);
+            this.btnCurso.Name = "btnCurso";
+            this.btnCurso.Size = new System.Drawing.Size(75, 23);
+            this.btnCurso.TabIndex = 13;
+            this.btnCurso.Text = "Curso";
+            this.btnCurso.UseVisualStyleBackColor = true;
+            this.btnCurso.Click += new System.EventHandler(this.btnCurso_Click);
+            // 
             // dbConn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 310);
+            this.Controls.Add(this.btnCurso);
             this.Controls.Add(this.btnPersona);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.btnEstado);
@@ -209,6 +221,7 @@ namespace lab04
         private System.Windows.Forms.Button btnEstado;
         private System.Windows.Forms.Button btnDesconectar;
         private System.Windows.Forms.Button btnPersona;
+        private System.Windows.Forms.Button btnCurso;
     }
 }
 

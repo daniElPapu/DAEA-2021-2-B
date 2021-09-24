@@ -45,6 +45,7 @@ namespace lab04
                 MessageBox.Show("Conectado satisfactoriamente");
                 btnDesconectar.Enabled = true;
                 btnPersona.Enabled = true;
+                btnCurso.Enabled = true;
             }
             catch (Exception ex){
                 MessageBox.Show("Error al conectar al servidor: \n"+ex.ToString());
@@ -77,6 +78,7 @@ namespace lab04
                     MessageBox.Show("Conexión cerrada satisfactoriamente");
                     btnDesconectar.Enabled = false;
                     btnPersona.Enabled = false;
+                    btnCurso.Enabled = false;
                 }
                 else
                     MessageBox.Show("La conexión ya está cerrada" + conn.State);
@@ -104,6 +106,12 @@ namespace lab04
         {
             Persona persona = new Persona(conn);
             persona.Show();
+        }
+
+        private void btnCurso_Click(object sender, EventArgs e)
+        {
+            Course course = new Course(conn);
+            course.Show();
         }
     }
 }
