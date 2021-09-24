@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace lab03
+namespace lab04
 {
     public partial class dbConn : Form
     {
@@ -44,6 +44,7 @@ namespace lab03
                 conn.Open();
                 MessageBox.Show("Conectado satisfactoriamente");
                 btnDesconectar.Enabled = true;
+                btnPersona.Enabled = true;
             }
             catch (Exception ex){
                 MessageBox.Show("Error al conectar al servidor: \n"+ex.ToString());
@@ -74,6 +75,8 @@ namespace lab03
                 if (conn.State != ConnectionState.Closed) { 
                     conn.Close();
                     MessageBox.Show("Conexión cerrada satisfactoriamente");
+                    btnDesconectar.Enabled = false;
+                    btnPersona.Enabled = false;
                 }
                 else
                     MessageBox.Show("La conexión ya está cerrada" + conn.State);
@@ -95,6 +98,12 @@ namespace lab03
                 txtUsuario.Enabled = true;
                 txtContraseña.Enabled = true;
             }
+        }
+
+        private void btnPersona_Click(object sender, EventArgs e)
+        {
+            Persona persona = new Persona(conn);
+            persona.Show();
         }
     }
 }

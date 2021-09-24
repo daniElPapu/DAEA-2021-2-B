@@ -1,5 +1,5 @@
 ﻿
-namespace lab03
+namespace lab04
 {
     partial class dbConn
     {
@@ -41,6 +41,7 @@ namespace lab03
             this.btnConectar = new System.Windows.Forms.Button();
             this.btnEstado = new System.Windows.Forms.Button();
             this.btnDesconectar = new System.Windows.Forms.Button();
+            this.btnPersona = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,6 +60,7 @@ namespace lab03
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(129, 20);
             this.txtServidor.TabIndex = 1;
+            this.txtServidor.Text = "DESKTOP-4UPQ8HT\\SQLEXPRESS01";
             // 
             // txtUsuario
             // 
@@ -83,6 +85,7 @@ namespace lab03
             this.txtBD.Name = "txtBD";
             this.txtBD.Size = new System.Drawing.Size(129, 20);
             this.txtBD.TabIndex = 5;
+            this.txtBD.Text = "School";
             // 
             // label3
             // 
@@ -126,7 +129,7 @@ namespace lab03
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(93, 261);
+            this.btnConectar.Location = new System.Drawing.Point(60, 261);
             this.btnConectar.Name = "btnConectar";
             this.btnConectar.Size = new System.Drawing.Size(75, 23);
             this.btnConectar.TabIndex = 9;
@@ -136,7 +139,7 @@ namespace lab03
             // 
             // btnEstado
             // 
-            this.btnEstado.Location = new System.Drawing.Point(197, 261);
+            this.btnEstado.Location = new System.Drawing.Point(158, 261);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(75, 23);
             this.btnEstado.TabIndex = 10;
@@ -147,7 +150,7 @@ namespace lab03
             // btnDesconectar
             // 
             this.btnDesconectar.Enabled = false;
-            this.btnDesconectar.Location = new System.Drawing.Point(299, 261);
+            this.btnDesconectar.Location = new System.Drawing.Point(250, 261);
             this.btnDesconectar.Name = "btnDesconectar";
             this.btnDesconectar.Size = new System.Drawing.Size(75, 23);
             this.btnDesconectar.TabIndex = 11;
@@ -155,11 +158,23 @@ namespace lab03
             this.btnDesconectar.UseVisualStyleBackColor = true;
             this.btnDesconectar.Click += new System.EventHandler(this.btnDesconectar_Click);
             // 
+            // btnPersona
+            // 
+            this.btnPersona.Enabled = false;
+            this.btnPersona.Location = new System.Drawing.Point(345, 261);
+            this.btnPersona.Name = "btnPersona";
+            this.btnPersona.Size = new System.Drawing.Size(75, 23);
+            this.btnPersona.TabIndex = 12;
+            this.btnPersona.Text = "Persona";
+            this.btnPersona.UseVisualStyleBackColor = true;
+            this.btnPersona.Click += new System.EventHandler(this.btnPersona_Click);
+            // 
             // dbConn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 310);
+            this.Controls.Add(this.btnPersona);
             this.Controls.Add(this.btnDesconectar);
             this.Controls.Add(this.btnEstado);
             this.Controls.Add(this.btnConectar);
@@ -193,6 +208,7 @@ namespace lab03
         private System.Windows.Forms.Button btnConectar;
         private System.Windows.Forms.Button btnEstado;
         private System.Windows.Forms.Button btnDesconectar;
+        private System.Windows.Forms.Button btnPersona;
     }
 }
 
