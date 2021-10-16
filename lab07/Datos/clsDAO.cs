@@ -10,7 +10,8 @@ namespace Datos
     {
         public SqlConnection conn;
 
-        public clsDAO() {
+        public clsDAO()
+        {
             string str = "Server=DESKTOP-4UPQ8HT\\SQLEXPRESS01;Database=School;Integrated Security=true";
             conn = new SqlConnection(str);
         }

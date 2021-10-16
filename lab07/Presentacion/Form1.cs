@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Negocio;
 
 namespace Presentacion
 {
@@ -24,8 +23,19 @@ namespace Presentacion
             Negocio.clsNegPerson np = new Negocio.clsNegPerson();
             dt = np.GetAll();
 
-            dgvDatos.DataSource = dt;
-            dgvDatos.Refresh();
+            dgDatos.DataSource = dt;
+            dgDatos.Refresh();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            Negocio.clsNegPerson np = new Negocio.clsNegPerson();
+            String name = txtNombre.Text;
+            dt = np.GetByName(name);
+
+            dgDatos.DataSource = dt;
+            dgDatos.Refresh();
         }
     }
 }
