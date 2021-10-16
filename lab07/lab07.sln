@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{6A17A934-B395-4246-9CEA-06617D630665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{56E3CA04-72B2-4FAE-B995-8034F38CB6E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion\Presentacion.csproj", "{EEE98C98-5C95-4115-96DA-B5622829760A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A17A934-B395-4246-9CEA-06617D630665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A17A934-B395-4246-9CEA-06617D630665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A17A934-B395-4246-9CEA-06617D630665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A17A934-B395-4246-9CEA-06617D630665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E3CA04-72B2-4FAE-B995-8034F38CB6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E3CA04-72B2-4FAE-B995-8034F38CB6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E3CA04-72B2-4FAE-B995-8034F38CB6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E3CA04-72B2-4FAE-B995-8034F38CB6E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE98C98-5C95-4115-96DA-B5622829760A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE98C98-5C95-4115-96DA-B5622829760A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE98C98-5C95-4115-96DA-B5622829760A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE98C98-5C95-4115-96DA-B5622829760A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02CE47C2-3767-4E19-9037-995FF276E4B8}
+	EndGlobalSection
+EndGlobal
