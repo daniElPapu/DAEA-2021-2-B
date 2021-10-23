@@ -7,11 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace lab09
 {
-    public partial class Contact : Page
+    public partial class Persona : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnSaludar_Click(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert('Hola "+txtNombre.Text+"');</script>");
         }
     }
 }
