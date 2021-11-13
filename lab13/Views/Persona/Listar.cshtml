@@ -1,0 +1,63 @@
+﻿@model List<lab13.Models.Persona>
+@{
+    ViewBag.Title = "Listar";
+    var grid = new WebGrid(source: Model, columnNames: new[]
+    {
+        "PersonId", "FirstName", "LastName", "DateOfBirth", "Address", "Email"
+    });
+}
+
+<h2>Listado de personas</h2>
+@using (Html.BeginForm("Listar", "Persona"))
+{
+    <label> Busqueda:</label>
+    <input type="text" name="buscar" autofocus class="form-control" />
+    <button type="submit">Buscar</button>
+}
+@grid.GetHtml(tableStyle: "table table-centered table-nowrap mb-0 rounded", headerStyle: "thead-light",
+            columns: grid.Columns(
+                grid.Column(style: "border-0", columnName: "PersonID", header: "ID PERSONA"),
+                grid.Column(style: "border-0", columnName: "FirstName", header: "NOMBRE"),
+                grid.Column(style: "border-0", columnName: "LastName", header: "APELLIDO"),
+                grid.Column(style: "border-0", columnName: "DateOfBirth", header: "FECHA DE NACIMIENTO"),
+                grid.Column(style: "border-0", columnName: "Address", header: "DIRECCIÓN"),
+                grid.Column(style: "border-0", columnName: "Email", header: "CORREO ELECTRÓNICO"),
+                grid.Column(style: "border-0", header: "Acciones", format: (item) =>
+                             Html.ActionLink("Ver", "Mostrar", "Persona", new { id = item.PersonID }, null))
+            )
+        )
+<!--
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NOMBRE</th>
+            <th>APELLIDOS</th>
+            <th>FECHA DE NACIMIENTO</th>
+            <th>DIRECCIÓN</th>
+            <th>CORREO ELECTRÓNICO</th>
+            <th>ACCIONES</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var person in Model)
+        {
+        <tr>
+            <td >@person.PersonID</td>
+            <td >@person.FirstName</td>
+            <td >@person.LastName</td>
+            <td >@person.DateOfBirth</td>
+            <td >@person.Address</td>
+            <td >@person.Email</td>
+            <td >
+                @Html.ActionLink("Ver", "Mostrar", "Persona", new
+{
+                    @class = "btn btn-sm btn-tertiary",
+ @href = "/Person/PersonShow/" + person.PersonID
+                })
+        </td>
+    </tr>
+    }
+</tbody>
+</table>
+    -->
