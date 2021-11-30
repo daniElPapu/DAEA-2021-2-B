@@ -1,0 +1,62 @@
+﻿@model Practica4.Models.Prestamo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<h4>Prestamo</h4>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-5">
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.FecPrestamo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FecPrestamo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.FecDevolucion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.FecDevolucion)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-7">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Libro.Titulo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Libro.Titulo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Usuario.NIF)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Usuario.NIF)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+</div>
+<div>
+
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPrestamo }, htmlAttributes: new { @class = "btn btn-warning"}) |
+    @Html.ActionLink("Back to List", "Index", new { },htmlAttributes: new { @class = "btn btn-info" })
+</p>
